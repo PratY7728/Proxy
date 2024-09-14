@@ -5,7 +5,6 @@ const app = express();
 // Replace this with the target server URL
 const targetUrl = 'https://api.backpack.exchange';
 
-// Handle CORS
 app.use((req, res, next) => {
     res.header('Access-Control-Allow-Origin', 'https://frontend-exchange-xi.vercel.app');
     res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
